@@ -107,8 +107,8 @@ Lightweight and Testable: Every layer is independent and easy to maintain.
 │
 ├── ui
 │   └── viewmodel
-│       └── MarketViewModel.kt ```
-
+│       └── MarketViewModel.kt 
+```
 ### 🔌 Dependency Injection (Koin)
 ```kotlin
 fun initKoin(config: KoinAppDeclaration? = null) = startKoin {
