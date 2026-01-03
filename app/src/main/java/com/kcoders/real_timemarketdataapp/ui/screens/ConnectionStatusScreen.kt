@@ -206,14 +206,5 @@ fun ConnectionStatusScreen() {
 
         Spacer(Modifier.height(40.dp))
 
-
-//        Button(
-//            onClick = { Toast.makeText(ctx,"Reconnecting",
-//                Toast.LENGTH_SHORT).show() },
-//            modifier = Modifier.fillMaxWidth(0.8f),
-//            shape = MaterialTheme.shapes.medium
-//        ) {
-//            Text("Reconnect Socket", modifier = Modifier.padding(vertical = 4.dp))
-//        }
     }
 }

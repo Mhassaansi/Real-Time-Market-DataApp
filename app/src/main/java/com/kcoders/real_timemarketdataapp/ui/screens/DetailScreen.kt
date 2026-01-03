@@ -16,45 +16,11 @@ import androidx.compose.ui.unit.sp
 import com.kcoders.real_timemarketdataapp.ui.viewmodel.MarketViewModel
 import org.koin.compose.viewmodel.koinViewModel
 import kotlin.collections.emptyList
-import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.text.font.FontWeight
-import java.text.SimpleDateFormat
-import java.util.*
-
-//@Composable
-//fun DetailScreen() {
-//    val vm = koinViewModel<MarketViewModel>()
-//
-//
-//
-//    val trades = vm.trades.collectAsState(emptyList())
-//    val price = vm.price.collectAsState()
-//    val dir = vm.direction.collectAsState()
-//
-//    Column(Modifier.padding(16.dp)) {
-//
-//        Text("Current Price", fontSize = 18.sp)
-//
-//        Text(
-//            "${price.value}",
-//            fontSize = 28.sp,
-//            color = if (dir.value == 1) Color.Green else Color.Red
-//        )
-//
-//        Spacer(Modifier.height(16.dp))
-//        Text("Recent Trades")
-//
-//        LazyColumn {
-//            items(trades.value) {
-//                Text("${it.price} | ${it.quantity}")
-//            }
-//        }
-//    }
-//}
 
 
 
