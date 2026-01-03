@@ -100,6 +100,7 @@ Lightweight and Testable: Every layer is independent and easy to maintain.
 │   └── usecase
 │       ├── ObserveTradesUseCase.kt
 │       ├── SaveTradeUseCase.kt
+│       ├── GetConnectionStatusUseCase.kt
 │       └── StreamMarketUseCase.kt
 │
 ├── di
