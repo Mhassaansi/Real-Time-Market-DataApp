@@ -107,7 +107,7 @@ Lightweight and Testable: Every layer is independent and easy to maintain.
 │
 ├── ui
 │   └── viewmodel
-│       └── MarketViewModel.kt
+│       └── MarketViewModel.kt ```
 
 ### 🔌 Dependency Injection (Koin)
 ```kotlin
@@ -115,6 +115,7 @@ fun initKoin(config: KoinAppDeclaration? = null) = startKoin {
     config?.invoke(this)
     modules(repositoryModule, useCaseModule, viewModelModule, databaseModule, dataModule)
 }
+```
 
 
 Database Module: Initializes Room DB and DAO.
