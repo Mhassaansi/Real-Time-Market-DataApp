@@ -39,7 +39,7 @@ GetConnectionStatusUseCase – Provides WebSocket connection status.
 
 This approach keeps ViewModels lightweight, delegating logic to dedicated use cases.
 
-## 3. Presentation Layer (com.kcoders.real_timemarketdataapp.ui)
+## 3. Presentation Layer
 
 Handles UI and user interactions using Jetpack Compose.
 
@@ -68,18 +68,19 @@ Lightweight and Testable: Every layer is independent and easy to maintain.
 
 ## 🛠 Tech Stack
 
-Android: Kotlin, Jetpack Compose, ViewModel, StateFlow
+#### Android: Kotlin, Jetpack Compose, ViewModel, StateFlow
 
-Networking: Ktor WebSockets, OkHttp
+#### Networking: Ktor WebSockets, OkHttp
 
-Database: Room Database
+#### Database: Room Database
 
-Architecture: Clean Architecture, MVVM
+#### Architecture: Clean Architecture, MVVM
 
-DI: Koin
+#### DI: Koin
 
-📁 Project Structure
-com.kcoders.real_timemarketdataapp
+## 📁 Project Structure
+
+```The project is organized following Clean Architecture principles:
 │
 ├── data
 │   ├── local
@@ -108,7 +109,8 @@ com.kcoders.real_timemarketdataapp
 │   └── viewmodel
 │       └── MarketViewModel.kt
 
-// 🔌 Dependency Injection (Koin)
+### 🔌 Dependency Injection (Koin)
+```kotlin
 fun initKoin(config: KoinAppDeclaration? = null) = startKoin {
     config?.invoke(this)
     modules(repositoryModule, useCaseModule, viewModelModule, databaseModule, dataModule)
